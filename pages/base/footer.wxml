@@ -1,0 +1,22 @@
+<view class="c-minheight wx-view_yEQuOb" >
+    <view catchtap="tap_968bca16" class="c-minheight wx-view_rvUdMb"  >
+        <image class="wx-image_TU57ru"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/e1ea25167ab5108f7320854c6d0606a2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/e1ea25167ab5108f7320854c6d0606a2_origin.png); "/>
+        <text class="c-block wx-text_tR9RMa" >首页</text>
+    </view>
+    <view catchtap="tap_f1eb6dea" class="c-minheight wx-view_9IW7Gi"  >
+        <image class="wx-image_2gukY4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/37508dc33fd8d9be65d985f78c3788bc_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/37508dc33fd8d9be65d985f78c3788bc_origin.png); "/>
+        <text class="c-block wx-text_IsqZfc" >消息</text>
+    </view>
+    <view catchtap="tap_346da9a9" class="c-minheight wx-view_9IW7Gi"  >
+        <image class="wx-image_2gukY4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/292d03794e4f0c20bf024d1c569589fd_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/292d03794e4f0c20bf024d1c569589fd_origin.png); "/>
+        <text class="c-block wx-text_IsqZfc" >订单</text>
+    </view>
+    <view catchtap="tap_a4e499a9" class="c-minheight wx-view_9IW7Gi"  >
+        <image class="wx-image_2gukY4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/de3888ade77f33ce92131605ac105fba_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/de3888ade77f33ce92131605ac105fba_origin.png); "/>
+        <text class="c-block wx-text_IsqZfc" >我的</text>
+    </view>
+    <view catchtap="tap_c1320a8c" class="c-minheight wx-view_9IW7Gi"  >
+        <image class="wx-image_2gukY4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/cd25db27447e997e1d0b4a0235f34360_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/cd25db27447e997e1d0b4a0235f34360_origin.png); "/>
+        <text class="c-block wx-text_IsqZfc" >任务</text>
+    </view>
+</view>

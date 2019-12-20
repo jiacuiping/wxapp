@@ -1,0 +1,76 @@
+<view class="c-minheight wx-view_SBLLTf" >
+    <form bindsubmit="formSubmit">
+        <text class="c-block wx-text_6RvEM1" >发布任务</text>
+        <view class="c-minheight wx-view_AEdUAQ" >
+            <view class="c-minheight wx-view_zyM7Cy" >
+                <view class="c-minheight wx-view_POamMX" >
+                    <image class="wx-image_IEZnI3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/9abd93558160909ab81fcbb242d28e84_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/9abd93558160909ab81fcbb242d28e84_origin.png); "/>
+                    <text class="c-block wx-text_vMC3gL" >任务标题</text>
+                </view>
+                <view class="c-minheight wx-view_wGiE2Y" >
+                    <input class="c-block c-fullwidth wx-input_hjMiOV"  name="task_title" placeholder="请填写任务标题" type="text"/>
+                </view>
+            </view>
+            <view class="c-minheight wx-view_zyM7Cy" >
+                <view class="c-minheight wx-view_POamMX" >
+                    <image class="wx-image_IEZnI3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/d6e65a2dd3f7300a8e1a9f4aad46744d_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/d6e65a2dd3f7300a8e1a9f4aad46744d_origin.png); "/>
+                    <text class="c-block wx-text_vMC3gL" >取货地址</text>
+                </view>
+                <view class="c-minheight wx-view_wGiE2Y" >
+                    <input class="c-block c-fullwidth wx-input_hjMiOV"  name="task_pickupaddress" placeholder="请填写取货地址" type="text"/>
+                </view>
+            </view>
+            <view class="c-minheight wx-view_zyM7Cy" >
+                <view class="c-minheight wx-view_POamMX" >
+                    <image class="wx-image_IEZnI3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/fc4e70a2e8629eb45e648c1e6b3e5fac_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/fc4e70a2e8629eb45e648c1e6b3e5fac_origin.png); "/>
+                    <text class="c-block wx-text_vMC3gL" >取货联系电话</text>
+                </view>
+                <view class="c-minheight wx-view_wGiE2Y" >
+                    <input class="c-block c-fullwidth wx-input_hjMiOV"  name="task_pickupmobile" placeholder="请填写取货联系电话" type="text" maxlength="11"/>
+                </view>
+            </view>
+
+            <view class="c-minheight wx-view_zyM7Cy" >
+                <view class="c-minheight wx-view_POamMX" >
+                    <image class="wx-image_IEZnI3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/d6e65a2dd3f7300a8e1a9f4aad46744d_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/d6e65a2dd3f7300a8e1a9f4aad46744d_origin.png); "/>
+                    <text class="c-block wx-text_vMC3gL" >收货地址</text>
+                </view>
+                <view class="c-minheight wx-view_wGiE2Y" >
+                    <input class="c-block c-fullwidth wx-input_hjMiOV"  name="task_shippingaddress" placeholder="请填写收货地址" type="text"/>
+                </view>
+            </view>
+            <view class="c-minheight wx-view_zyM7Cy" >
+                <view class="c-minheight wx-view_POamMX" >
+                    <image class="wx-image_IEZnI3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/fc4e70a2e8629eb45e648c1e6b3e5fac_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/fc4e70a2e8629eb45e648c1e6b3e5fac_origin.png); "/>
+                    <text class="c-block wx-text_vMC3gL" >收货联系人</text>
+                </view>
+                <view class="c-minheight wx-view_wGiE2Y" >
+                    <input class="c-block c-fullwidth wx-input_hjMiOV"  name="task_shippinguser" placeholder="请填写收货联系人" type="text"/>
+                </view>
+            </view>
+            <view class="c-minheight wx-view_zyM7Cy" >
+                <view class="c-minheight wx-view_POamMX" >
+                    <image class="wx-image_IEZnI3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/fc4e70a2e8629eb45e648c1e6b3e5fac_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/fc4e70a2e8629eb45e648c1e6b3e5fac_origin.png); "/>
+                    <text class="c-block wx-text_vMC3gL" >收货联系电话</text>
+                </view>
+                <view class="c-minheight wx-view_wGiE2Y" >
+                    <input class="c-block c-fullwidth wx-input_hjMiOV"  name="task_shippingmobile" placeholder="请填写收货联系电话" type="text" maxlength="11"/>
+                </view>
+            </view>
+            <view class="c-minheight wx-view_zyM7Cy" >
+                <view class="c-minheight wx-view_POamMX" >
+                    <image class="wx-image_IEZnI3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/a8bf01a73feb402493e0261ad94fb6cf_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/a8bf01a73feb402493e0261ad94fb6cf_origin.png); "/>
+                    <text class="c-block wx-text_vMC3gL" >佣金</text>
+                </view>
+                <view class="c-minheight wx-view_wGiE2Y" >
+                    <input class="c-block c-fullwidth wx-input_hjMiOV"  name="task_price" placeholder="请填写所支付的佣金" type="number"/>
+                </view>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_pQbIFO" >
+            <text class="c-block wx-text_JAC0C7" >任务备注</text>
+            <textarea class="c-block c-fullwidth wx-textarea_QqAOS8"  name="task_desc" placeholder="任务备注" type="textarea"/>
+            <button class="wx-button_32ZGjs"  hover-class="button-hover" form-type="submit" size="default" type="default">点击发布</button>
+        </view>
+    </form>
+</view>

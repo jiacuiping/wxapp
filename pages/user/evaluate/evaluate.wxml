@@ -1,0 +1,27 @@
+<view class="c-minheight wx-view_f4CmOn" >
+    <text class="c-block wx-text_KtEu95" >我的评价</text>
+    <view class="c-block wx-text_g14KPo" bindtap="GoEvaluate">去评价</view>
+</view>
+
+<view class="c-minheight wx-view_8zI0E9" wx:for="{{evals}}">
+    <view class="c-minheight wx-view_yVtVzi" >
+        <view class="c-minheight wx-view_1v80mn" >
+            <image class="wx-image_O2ixwA"  mode="scaleToFill" src="{{item.eval_star < 1 ? 'http://qty83k.creatby.com/materials/161431/origin/47cd2129990c2f1fd32f3e60b9aa8094_origin.png' : 'http://qty83k.creatby.com/materials/161431/origin/3106dfe70caa05b32e11f30c2cc5750d_origin.png'}}"/>
+            <image class="wx-image_O2ixwA"  mode="scaleToFill" src="{{item.eval_star < 2 ? 'http://qty83k.creatby.com/materials/161431/origin/47cd2129990c2f1fd32f3e60b9aa8094_origin.png' : 'http://qty83k.creatby.com/materials/161431/origin/3106dfe70caa05b32e11f30c2cc5750d_origin.png'}}"/>
+            <image class="wx-image_O2ixwA"  mode="scaleToFill" src="{{item.eval_star < 3 ? 'http://qty83k.creatby.com/materials/161431/origin/47cd2129990c2f1fd32f3e60b9aa8094_origin.png' : 'http://qty83k.creatby.com/materials/161431/origin/3106dfe70caa05b32e11f30c2cc5750d_origin.png'}}"/><image class="wx-image_O2ixwA"  mode="scaleToFill" src="{{item.eval_star < 4 ? 'http://qty83k.creatby.com/materials/161431/origin/47cd2129990c2f1fd32f3e60b9aa8094_origin.png' : 'http://qty83k.creatby.com/materials/161431/origin/3106dfe70caa05b32e11f30c2cc5750d_origin.png'}}"/><image class="wx-image_O2ixwA"  mode="scaleToFill" src="{{item.eval_star < 5 ? 'http://qty83k.creatby.com/materials/161431/origin/47cd2129990c2f1fd32f3e60b9aa8094_origin.png' : 'http://qty83k.creatby.com/materials/161431/origin/3106dfe70caa05b32e11f30c2cc5750d_origin.png'}}"/>
+            <text class="c-block wx-text_zR1tSK" >{{item.eval_star}}分</text>
+        </view>
+        <view class="c-minheight wx-view_SPPcsB" >
+            <text class="c-block wx-text_QgBxWU" >{{item.eval_time}}</text>
+        </view>
+    </view>
+    <text class="c-block wx-text_2eMPhb" >{{item.eval_text}}</text>
+    <view class="c-minheight wx-view_cd7lqx" style="min-height:30px">
+        <block wx:if="{{item.eval_images.length != 0}}">
+            <image class="wx-image_f7V3FO"  mode="scaleToFill" wx:for="{{item.eval_images}}" wx:for-item="img" src="{{img}}"/>
+        </block>
+        <view class="c-minheight wx-view_9BdbUc" style="min-height: 30px;height: 30px;margin-left: 0px;">
+            <text class="c-block wx-text_LXsXLD" style="min-height: 30px;height: 30px;margin-top:5px;">{{item.goods_name}}</text>
+        </view>
+    </view>
+</view>

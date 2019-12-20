@@ -1,0 +1,36 @@
+<view class="c-minheight wx-view_f4CmOn" >
+    <text class="c-block wx-text_KtEu95" >地址管理</text>
+    <!-- <text catchtap="tap_ce3cb451" class="c-block wx-text_g14KPo"  >删除</text> -->
+</view>
+<view class="c-minheight wx-view_BQ34Ay" >
+    <form bindsubmit="formSubmit">
+        <view class="c-minheight wx-view_iS3gC6" >
+            <input class="c-block c-fullwidth wx-input_Fr6Hho"  name="address_contact" placeholder="收货人姓名" type="text"/>
+        </view>
+        <view class="c-minheight wx-view_iS3gC6" >
+            <input class="c-block c-fullwidth wx-input_Fr6Hho"  name="address_mobile" placeholder="收货人手机号码" type="text"/>
+        </view>
+        <view class="c-minheight wx-view_H0KNFO" >
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{school}}" range-key="school_name" style="height: 40px;">
+                <input class="c-block c-fullwidth wx-input_Fr6Hho" type="text" placeholder="{{address_schoolText}}" style="height: 40px;"/>
+                <!-- <view class="picker">{{address_schoolText}}</view> -->
+              </picker>
+            <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{school}}" range-key="school_name"></picker> -->
+            <input hidden name="address_school" value="{{address_school}}"/>
+            <text class="c-block wx-text_G6wU2A" > > </text>
+        </view>
+        <view class="c-minheight wx-view_W262Df" >
+            <textarea class="c-block c-fullwidth wx-textarea_3umbG3"  name="address_info" placeholder="详细地址" type="textarea"/>
+            <label class="c-minheight c-block wx-label_PhxDge" >
+                <checkbox-group name="address_default">
+                    <label class="checkbox">
+                        <checkbox value="1" />设为默认收货地址
+                    </label>
+                </checkbox-group>
+            <!--     <radio class="wx-radio_Bd7mMn" type="radio" name="address_default"/>
+                <text class="radio-text wx-text_lafN6r" >设为默认收货地址</text> -->
+            </label>
+        </view>
+        <button class="wx-button_g2BpyL"  hover-class="button-hover" size="default" type="default" form-type="submit">确定</button>
+    </form>
+</view>

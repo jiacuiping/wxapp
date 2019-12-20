@@ -1,0 +1,56 @@
+<view class="c-minheight wx-view_f4CmOn" >
+    <text class="c-block wx-text_KtEu95" >商品详情</text>
+    <image class="wx-image_W3MHko"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ebdb82959d3df9c03f64cbfa7f2701c8_origin.png" bindtap="GoCar"/>
+</view>
+<view style="background: url({{goods.goods_image}}) center no-repeat;background-size: 100% 100%;width:100%;height: 30%;"></view>
+<view class="c-minheight wx-view_uP01KQ" >
+    <text class="c-block wx-text_Y7NlhP" >{{goods.goods_name}}</text>
+    <text class="c-block wx-text_Fgewed" style="width: 100%">剩余库存:{{goods.goods_reserve}}件   已售:{{goods.goods_sales}}件   商品规格：{{goods.goods_spec}}</text>
+    <text class="c-block wx-text_Fgewed" >售价 :</text>
+    <text class="c-block wx-text_h5Clr3" wx:if="{{goods.is_offer == 0}}">￥{{goods.goods_price}}</text>
+    <text class="c-block wx-text_h5Clr3" wx:else>￥{{goods.offerInfo.limited_money}}</text>
+    <view class="c-minheight wx-view_7j7j4P" >
+        <view class="c-minheight wx-view_lSgVEi" style="width: 150px;float: left;height: 25px;padding-left: 50px">
+            <view class="changeNumber" bindtap="ChangeNumber" data-id="{{item.car_id}}" data-type="dec"> - </view>
+            <view class="number"> {{number}} </view>
+            <view class="changeNumber" bindtap="ChangeNumber" data-id="{{item.car_id}}" data-type="inc"> + </view>
+        </view>
+        <view class="c-minheight wx-view_tlx3vV">
+            <button class="wx-button_rud0JA"  hover-class="button-hover" size="default" type="default" bindtap="AddCar">加入购物车</button>
+            <button class="wx-button_E83nki"  hover-class="button-hover" size="default" type="default" bindtap="CreateOrder">立即购买</button>
+        </view>
+        <!-- <input type="hidden" name="" value="{{goods.is_offer}}"></input> -->
+    </view>
+</view>
+<view class="c-minheight wx-view_d2U0TZ" >
+    <view class="c-minheight wx-view_EUr73J" >
+        宝贝评价（{{evals.length}})
+    </view>
+    <view class="c-minheight wx-view_AC5oZj" >
+        查看全部 >
+    </view>
+<!--     <view class="c-minheight wx-view_J0Y7tH" >
+        <text class="c-block wx-text_PIIUXj" >气味不错(1525)</text>
+        <text class="c-block wx-text_PIIUXj" >质量好(1525)</text>
+        <text class="c-block wx-text_PIIUXj" >物流快(1525)</text>
+    </view> -->
+    <view class="c-minheight wx-view_lkcMfw" wx:for="{{evals}}" wx:if="{{index < 2}}">
+
+        <image class="wx-image_HbRRrC"  mode="scaleToFill" src="{{item.user.user_avatar}}" style="border-radius: 50%"/>
+        <text class="c-block wx-text_gOHuvR">
+            <block wx:if="{{item.eval_is_incognito}}">匿名用户</block>
+            <block wx:elseif="{{item.eval_is_incognito eq 1}}"> {{item.user.user_name}} </block>
+        </text>
+        <view class="c-minheight wx-view_eVkagX" >
+            {{item.eval_text}}
+        </view>
+    </view>
+</view>
+<view class="c-minheight wx-view_pDCyHe" >
+    宝贝详情
+</view>
+
+<!-- <view class="c-minheight wx-view_bTKBCR" >
+    {{goods.goods_info}}
+</view> -->
+<rich-text nodes="{{goods.goods_info}}"></rich-text>

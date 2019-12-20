@@ -1,0 +1,37 @@
+<view class="c-minheight wx-view_f4CmOn" >
+    <text class="c-block wx-text_KtEu95" >绑定手机</text>
+</view>
+<view class="c-minheight wx-view_u8jjek" >
+    <view class="c-minheight wx-view_0Mw8hP" >
+        <input class="c-block c-fullwidth wx-input_VLLavW"  name="input1" placeholder="请输入手机号" type="text"/>
+    </view>
+    <view class="c-minheight wx-view_0Mw8hP" >
+        <input class="c-block c-fullwidth wx-input_VLLavW"  name="input1" placeholder="请输入验证码" type="text"/>
+        <text class="c-block wx-text_EbRHhd" >获取验证码</text>
+    </view>
+    <button class="wx-button_pZof6n"  hover-class="button-hover" size="default" type="default">
+        绑定
+    </button>
+</view>
+<view class="c-minheight wx-view_shr8br" >
+    <view catchtap="tap_2e682e71" class="c-minheight wx-view_KC8lvw"  >
+        <image class="wx-image_A2KepQ"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/e1ea25167ab5108f7320854c6d0606a2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/e1ea25167ab5108f7320854c6d0606a2_origin.png); "/>
+        <text class="c-block wx-text_k5bw3E" >首页</text>
+    </view>
+    <view catchtap="tap_73d83197" class="c-minheight wx-view_KC8lvw"  >
+        <image class="wx-image_A2KepQ"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/37508dc33fd8d9be65d985f78c3788bc_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/37508dc33fd8d9be65d985f78c3788bc_origin.png); "/>
+        <text class="c-block wx-text_k5bw3E" >消息</text>
+    </view>
+    <view catchtap="tap_9a269b7c" class="c-minheight wx-view_KC8lvw"  >
+        <image class="wx-image_A2KepQ"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/292d03794e4f0c20bf024d1c569589fd_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/292d03794e4f0c20bf024d1c569589fd_origin.png); "/>
+        <text class="c-block wx-text_k5bw3E" >订单</text>
+    </view>
+    <view catchtap="tap_fa15a6ba" class="c-minheight wx-view_GTsrGz"  >
+        <image class="wx-image_fXZrE3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/de3888ade77f33ce92131605ac105fba_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/de3888ade77f33ce92131605ac105fba_origin.png); "/>
+        <text class="c-block wx-text_Y24U3e" >我的</text>
+    </view>
+    <view catchtap="tap_3cfb9167" class="c-minheight wx-view_KC8lvw"  >
+        <image class="wx-image_A2KepQ"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/cd25db27447e997e1d0b4a0235f34360_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/cd25db27447e997e1d0b4a0235f34360_origin.png); "/>
+        <text class="c-block wx-text_k5bw3E" >任务</text>
+    </view>
+</view>

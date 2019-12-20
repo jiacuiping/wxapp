@@ -1,0 +1,66 @@
+<view class="c-minheight wx-view_f4CmOn" >
+    <!-- <text catchtap="tap_b744e90d" class="c-block wx-text_sf4Zqx"  >&lt;</text> -->
+    <text class="c-block wx-text_KtEu95" >发表评价</text>
+</view>
+<view class="c-minheight wx-view_P0bJbT">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="请输入商品评价" />
+</view>
+<!-- <view class="c-minheight wx-view_P0bJbT" >
+    网上购物这么激烈，没想到店家的服务这么好，商品质量好而价低廉，我太感谢你了网上。购物这么激烈，没想到店家的服务这么好，商品质量好而价低廉，我太感谢你了！
+</view> -->
+
+<view class="c-minheight wx-view_3vRe02" >
+    <view class="c-minheight wx-view_NF0ZBc" >
+        <image class="wx-image_g8dF0A"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ea35677805dccd2fbad72ce912bfddba_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/ea35677805dccd2fbad72ce912bfddba_origin.png); "/>
+        <image class="wx-image_3CQMJg"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/1a64b50f4de490166e0d0e75f0f60ee2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/1a64b50f4de490166e0d0e75f0f60ee2_origin.png); "/>
+    </view>
+    <view class="c-minheight wx-view_NF0ZBc" >
+        <image class="wx-image_g8dF0A"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ea35677805dccd2fbad72ce912bfddba_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/ea35677805dccd2fbad72ce912bfddba_origin.png); "/>
+        <image class="wx-image_3CQMJg"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/1a64b50f4de490166e0d0e75f0f60ee2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/1a64b50f4de490166e0d0e75f0f60ee2_origin.png); "/>
+    </view>
+    <view class="c-minheight wx-view_h9mw5G" >
+        <image class="wx-image_1U8YhG"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/8e05f701eab75b33b01f4905e62c7867_origin.png" style="background-size:    100% 100%; background-position:0% 0%; background-repeat:no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/8e05f701eab75b33b01f4905e62c7867_origin.png); "/>
+    </view>
+</view>
+
+
+
+<view class="c-minheight wx-view_SwYUtj" >
+    <div class="tag-wx-image wx-image_a1ZVlm cf-element cf-empty" mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/77be6a186f3999358b33f08acd4d0c63_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/77be6a186f3999358b33f08acd4d0c63_origin.png); ">
+    </div>
+    <text class="c-block wx-text_EiKHQc" >匿名评价</text>
+    <image class="wx-image_a1ZVlm"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/77be6a186f3999358b33f08acd4d0c63_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/77be6a186f3999358b33f08acd4d0c63_origin.png); "/>
+</view>
+<view class="c-minheight wx-view_KLq4Go" >
+    商品评价
+    <image class="wx-image_0Rcp1S"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ab0a86098973f6c91c2d456c1dbb5116_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/ab0a86098973f6c91c2d456c1dbb5116_origin.png); "/>
+    <image class="wx-image_0Rcp1S"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ab0a86098973f6c91c2d456c1dbb5116_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/ab0a86098973f6c91c2d456c1dbb5116_origin.png); "/>
+    <image class="wx-image_0Rcp1S"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ab0a86098973f6c91c2d456c1dbb5116_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/ab0a86098973f6c91c2d456c1dbb5116_origin.png); "/>
+    <image class="wx-image_0Rcp1S"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ab0a86098973f6c91c2d456c1dbb5116_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/ab0a86098973f6c91c2d456c1dbb5116_origin.png); "/>
+    <image class="wx-image_vECW47"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/9ea08daa0243bc8a71af48e72ee1d18c_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/9ea08daa0243bc8a71af48e72ee1d18c_origin.png); "/>
+</view>
+<button class="wx-button_g2BpyL"  hover-class="button-hover" size="default" type="default">
+    提交评价
+</button>
+<view class="c-minheight wx-view_shr8br" >
+    <view catchtap="tap_2e682e71" class="c-minheight wx-view_KC8lvw"  >
+        <image class="wx-image_A2KepQ"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/e1ea25167ab5108f7320854c6d0606a2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/e1ea25167ab5108f7320854c6d0606a2_origin.png); "/>
+        <text class="c-block wx-text_k5bw3E" >首页</text>
+    </view>
+    <view catchtap="tap_73d83197" class="c-minheight wx-view_KC8lvw"  >
+        <image class="wx-image_A2KepQ"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/37508dc33fd8d9be65d985f78c3788bc_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/37508dc33fd8d9be65d985f78c3788bc_origin.png); "/>
+        <text class="c-block wx-text_k5bw3E" >消息</text>
+    </view>
+    <view catchtap="tap_4918f059" class="c-minheight wx-view_KC8lvw"  >
+        <image class="wx-image_A2KepQ"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/292d03794e4f0c20bf024d1c569589fd_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/292d03794e4f0c20bf024d1c569589fd_origin.png); "/>
+        <text class="c-block wx-text_k5bw3E" >订单</text>
+    </view>
+    <view catchtap="tap_fa15a6ba" class="c-minheight wx-view_GTsrGz"  >
+        <image class="wx-image_fXZrE3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/de3888ade77f33ce92131605ac105fba_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/de3888ade77f33ce92131605ac105fba_origin.png); "/>
+        <text class="c-block wx-text_Y24U3e" >我的</text>
+    </view>
+    <view catchtap="tap_3cfb9167" class="c-minheight wx-view_KC8lvw"  >
+        <image class="wx-image_A2KepQ"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/cd25db27447e997e1d0b4a0235f34360_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/161431/origin/cd25db27447e997e1d0b4a0235f34360_origin.png); "/>
+        <text class="c-block wx-text_k5bw3E" >任务</text>
+    </view>
+</view>

@@ -1,0 +1,103 @@
+<view class="c-minheight wx-view_MtdL8Y" >
+    <view class="c-minheight {{orderType == 'goods' ? 'wx-view_7SRaQD' : 'wx-view_xkP7Xq'}}" data-type="goods" bindtap="clickTab">商品订单</view>
+    <view class="c-minheight {{orderType == 'task' ? 'wx-view_7SRaQD' : 'wx-view_xkP7Xq'}}" data-type="task" bindtap="clickTab">跑腿订单</view>
+</view>
+
+<view class="goodsOrder" wx:if="{{orderType == 'goods'}}">
+    <view class="c-minheight wx-view_PUwtJt" >
+        <text class="c-block {{statusType == '-1' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="-1" data-type="goods">全部</text>
+        <text class="c-block {{statusType == '0' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="0" data-type="goods">待付款</text>
+        <text class="c-block {{statusType == '10,20' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="10,20" data-type="goods">已付款</text>
+        <text class="c-block {{statusType == '30,35' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="30,35" data-type="goods">已完成</text>
+        <text class="c-block {{statusType == '40' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="40" data-type="goods">已评价</text>
+        <text class="c-block {{statusType == '50' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="50" data-type="goods">退款</text>
+        <!-- <text class="c-block {{statusType == '50' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" >退款</text> -->
+    </view>
+    <view wx:if="{{order.length == 0}}" class="nodata" style="">暂无订单</view>
+    <view class="c-minheight wx-view_YxLhfX" wx:for="{{order}}" bindtap="GoInfo" data-id="{{item.order_id}}" >
+        <view class="c-minheight wx-view_fkClTD">
+            <view class="c-minheight wx-view_Ix6cr9" >
+                <text class="c-block wx-text_NrSGwA" >订单编号：</text>
+                <text class="c-block wx-text_lPtK9p" >{{item.order_sn}}</text>
+            </view>
+            <view class="c-minheight wx-view_5ktq0I">
+                <text class="c-block wx-text_aBZT7J" >{{item.order_statusText}} ></text>
+            </view>
+        </view>
+
+        <view class="c-minheight wx-view_AOwrSV" >
+            <view class="c-minheight wx-view_EWZE5z" >
+                <text class="c-block wx-text_1TiWUW" >下单</text>
+                <text class="c-block wx-text_f5X4cR" >{{item.hitime}}</text>
+            </view>
+            <view class="c-minheight wx-view_s15hnU" >
+                <view class="c-minheight wx-view_So5zZk" >
+                    <image class="wx-image_7qjjH4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/6ea025ac5a738dc4e0197cf4bfadaf5d_origin.png"/>
+                    <text class="c-block wx-text_ttkHZF" >{{item.address.outset}}</text>
+                </view>
+                <view class="c-minheight wx-view_So5zZk" >
+                    <image class="wx-image_7qjjH4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ffc5266b8e4fdb11b0514f9358617141_origin.png"/>
+                    <text class="c-block wx-text_ttkHZF" >{{item.address.finish}}</text>
+                </view>
+            </view>
+            <view class="c-minheight wx-view_00yZ2B" >
+                <text class="c-block wx-text_2lQ53Z" >{{item.order_money}}元</text>
+            </view>
+        </view>
+
+        <view style="width: 100%;height: 30px;">
+            <!-- <button class="operations "  hover-class="button-hover">确认收货</button> -->
+            <button class="operations" catchtap="ApplyRefund" hover-class="button-hover" wx:if="{{item.order_status > 9}}">申请退款</button>
+
+            <button class="operations" catchtap="cancelOrder" data-id="{{item.order_id}}" hover-class="button-hover" wx:if="{{item.order_status < 10}}">取消订单</button>
+            <button class="operations" catchtap="removeOrder" data-id="{{item.order_id}}" hover-class="button-hover" wx:else>删除订单</button>
+        </view>
+    </view>
+</view>
+
+<view class="taskOrder" wx:if="{{orderType == 'task'}}">
+    <view class="c-minheight wx-view_PUwtJt" >
+        <text class="c-block {{statusType == '-1' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="-1" data-type="task">全部</text>
+        <text class="c-block {{statusType == '0' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="0" data-type="task">待付款</text>
+        <text class="c-block {{statusType == '10' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="10" data-type="task">待接单</text>
+        <text class="c-block {{statusType == '20' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="20" data-type="task">配送中</text>
+        <text class="c-block {{statusType == '30' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="30" data-type="task">已完成</text>
+        <text class="c-block {{statusType == '30' ? 'wx-text_e3BY1J' : 'wx-text_FGjfb1'}}" bindtap="clickStatus" data-status="40" data-type="task">已评价</text>
+        <!-- <text class="c-block wx-text_FGjfb1" >已评价</text> -->
+    </view>
+
+    <view wx:if="{{order.length == 0}}" class="nodata" style="">暂无订单</view>
+
+    <view class="c-minheight wx-view_YxLhfX" wx:for="{{order}}" bindtap="GoInfo" data-id="{{item.order_id}}" >
+
+        <view class="c-minheight wx-view_fkClTD">
+            <view class="c-minheight wx-view_Ix6cr9" >
+                <text class="c-block wx-text_NrSGwA" >订单编号：</text>
+                <text class="c-block wx-text_lPtK9p" >{{item.order_sn}}</text>
+            </view>
+            <view class="c-minheight wx-view_5ktq0I">
+                <text class="c-block wx-text_aBZT7J" >{{item.task.task_statusText}} ></text>
+            </view>
+        </view>
+
+        <view class="c-minheight wx-view_AOwrSV" >
+            <view class="c-minheight wx-view_EWZE5z" >
+                <text class="c-block wx-text_1TiWUW" >下单</text>
+                <text class="c-block wx-text_f5X4cR" >{{item.hitime}}</text>
+            </view>
+            <view class="c-minheight wx-view_s15hnU" >
+                <view class="c-minheight wx-view_So5zZk" >
+                    <image class="wx-image_7qjjH4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/6ea025ac5a738dc4e0197cf4bfadaf5d_origin.png"/>
+                    <text class="c-block wx-text_ttkHZF" >{{item.task.task_pickupaddress}}</text>
+                </view>
+                <view class="c-minheight wx-view_So5zZk" >
+                    <image class="wx-image_7qjjH4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/ffc5266b8e4fdb11b0514f9358617141_origin.png"/>
+                    <text class="c-block wx-text_ttkHZF" >{{item.task.task_shippingaddress}}</text>
+                </view>
+            </view>
+            <view class="c-minheight wx-view_00yZ2B" >
+                <text class="c-block wx-text_2lQ53Z" >{{item.order_money}}元</text>
+            </view>
+        </view>
+    </view>
+</view>

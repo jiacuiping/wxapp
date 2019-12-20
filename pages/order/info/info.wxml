@@ -1,0 +1,115 @@
+<view class="c-minheight wx-view_f4CmOn" >
+    <!-- <text catchtap="tap_29da5ab3" class="c-block wx-text_sf4Zqx"  >&lt;</text> -->
+    <text class="c-block wx-text_KtEu95" >订单详情</text>
+</view>
+<view class="c-minheight wx-view_FDUPaF" >
+    <view class="c-minheight wx-view_vSqZHS" >
+        商品信息
+    </view>
+    <block wx:if="{{order.order_desc == '商品购买'}}">
+        <view class="c-minheight wx-view_6VvidG" wx:for="{{order.goods}}">
+            <text class="c-block wx-text_nLA7xq" >{{item.goods_name}}*{{item.item_number}}</text>
+            <text class="c-block wx-text_MsRlh0" >￥{{item.item_money}}</text>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="c-minheight wx-view_6VvidG" >
+            <text class="c-block wx-text_nLA7xq" >{{order.task.task_title}}</text>
+        </view>
+    </block>
+<!--     <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >联系方式</text>
+        <text class="c-block wx-text_1PSTPq" >14132356645</text>
+    </view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >取货地址</text>
+        <text class="c-block wx-text_1PSTPq" >山东省 济南市 平阴县 1052</text>
+    </view> -->
+</view>
+<view class="c-minheight wx-view_FDUPaF" >
+    <view class="c-minheight wx-view_vSqZHS" >
+        收货信息
+    </view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >联系人</text>
+        <text class="c-block wx-text_1PSTPq" >{{order.user.user_name}}</text>
+    </view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >联系方式</text>
+        <text class="c-block wx-text_1PSTPq" >{{order.user.user_mobile}}</text>
+    </view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >收货地址</text>
+        <text class="c-block wx-text_1PSTPq" wx:if="{{order.order_desc == '商品购买'}}">{{order.address.finish}}</text>
+        <text class="c-block wx-text_1PSTPq" wx:else>{{order.task.task_shippingaddress}}</text>
+    </view>
+</view>
+
+
+<view class="c-minheight wx-view_FDUPaF" wx:if="{{order.order_desc == '跑腿任务'}}">
+    <view class="c-minheight wx-view_vSqZHS" >
+        <text class="c-block wx-text_fUCSVd" >佣金</text>
+        <text class="c-block wx-text_Ogo8vb" >￥{{order.task.task_price}}</text>
+    </view>
+</view>
+
+
+<view class="c-minheight wx-view_FDUPaF" >
+    <view class="c-minheight wx-view_vSqZHS" >订单信息</view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >订单编号</text>
+        <text class="c-block wx-text_1PSTPq" >{{order.order_sn}}</text>
+    </view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >下单时间</text>
+        <text class="c-block wx-text_1PSTPq" >{{order.order_time}}</text>
+    </view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >取货时间</text>
+        <text class="c-block wx-text_1PSTPq" >{{order.task.task_ordertime}}</text>
+    </view>
+</view>
+
+<view class="c-minheight wx-view_FDUPaF" >
+    <view class="c-minheight wx-view_vSqZHS" >骑手信息</view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >骑手姓名</text>
+        <text class="c-block wx-text_1PSTPq" >{{order.user.user_name}}</text>
+    </view>
+    <view class="c-minheight wx-view_fseluo" >
+        <text class="c-block wx-text_Ox7JQ0" >联系电话</text>
+        <text class="c-block wx-text_1PSTPq" >{{order.user.user_mobile}}</text>
+    </view>
+</view>
+
+
+<view class="c-minheight wx-view_FDUPaF" >
+    <view class="c-minheight wx-view_vSqZHS" >
+        <text class="c-block wx-text_fUCSVd" >订单状态</text>
+        <text class="c-block wx-text_Ogo8vb" wx:if="{{order.order_desc == '商品购买'}}">{{order.order_statusText}}</text>
+        <text class="c-block wx-text_Ogo8vb" wx:else>{{order.task.task_statusText}}</text>
+    </view>
+</view>
+<block wx:if="{{order.order_desc == '跑腿任务'}}">
+    <view class="c-minheight wx-view_fseluo">
+        <text class="c-block wx-text_Ox7JQ0" >送达时间</text>
+        <text class="c-block wx-text_1PSTPq" wx:if="{{order.task.task_schedule > 29}}">{{order.task.task_complete}}</text>
+        <text class="c-block wx-text_1PSTPq" wx:else>未送达</text>
+    </view>
+
+    <view class="c-minheight wx-view_zfJ3XR">
+        <text class="c-block wx-text_1zq6Ya" >备注</text>
+        <textarea class="c-block c-fullwidth wx-textarea_S78rQy"  name="textarea1" type="textarea" value="{{order.task.task_desc}}"/>
+    </view>
+</block>
+
+<block wx:if="{{order.order_desc == '商品购买'}}">
+    <button class="wx-button_g2BpyL"  hover-class="button-hover" data-order="{{order.order_id}}" bindtap="GoPay" wx:if="{{order.order_status == 0}}">去付款</button>
+    <button class="wx-button_g2BpyL"  hover-class="button-hover" data-order="{{order.order_id}}" bindtap="Status" wx:elif="{{order.order_status == 30 || order.order_status == 10 || order.order_status == 20}}">确认收货</button>
+    <button class="wx-button_g2BpyL"  hover-class="button-hover" data-order="{{order.order_id}}" bindtap="GoEval" wx:elif="{{order.order_status == 35}}">去评价</button>
+</block>
+<block wx:else>
+    <button class="wx-button_g2BpyL"  hover-class="button-hover" data-order="{{order.order_id}}" bindtap="GoPay" wx:if="{{order.task.task_status == 0}}">去付款</button>
+    <button class="wx-button_g2BpyL"  hover-class="button-hover" data-order="{{order.order_id}}" bindtap="Status" wx:elif="{{order.task.task_status == 10 || order.task.task_status == 20}}">确认收货</button>
+    <button class="wx-button_g2BpyL"  hover-class="button-hover" data-order="{{order.order_id}}" bindtap="GoEval" wx:elif="{{order.task.task_status == 30 || order.task.task_status == 35}}">去评价</button>
+</block>

@@ -1,0 +1,53 @@
+<view class="c-minheight wx-view_TuQnOl" >
+    <text class="c-block wx-text_ebBZpC" >确认订单</text>
+</view>
+<view class="c-minheight wx-view_xDcgjd" >
+    <view class="c-minheight wx-view_WW93MC" >
+        <image class="wx-image_OkojJH"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/f8dea03df7d1731025f38f7f0e771bf6_origin.png"/>
+    </view>
+    <view class="c-minheight wx-view_sEOtF0" >
+        <view class="c-minheight wx-view_4tFLTa" >
+            <text class="c-block wx-text_sTOo2O" >{{address.address_contact}}</text>
+            <text class="c-block wx-text_PGh1ar" >{{address.address_mobile}}</text>
+        </view>
+        <view class="c-minheight wx-view_kT6iRp" >
+            <text class="c-block wx-text_pcENxB" >{{address.address_info}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_1RFOWN" >
+        <br/>
+        >
+    </view>
+</view>
+<view class="c-minheight wx-view_WwoSb6" >
+    <view class="c-minheight wx-view_8Fxp4Q" wx:for="{{info.goods}}">
+        <view class="c-minheight wx-view_hg4uai" >
+            <view class="c-minheight wx-view_6EfN9t" >
+                <image class="wx-image_1Xrxu3"  mode="scaleToFill" src="{{homeurl}}{{item.goods_image}}"/>
+            </view>
+            <view class="c-minheight wx-view_lCOotT" >
+                <text class="c-block wx-text_0XIor2" >{{item.goods_name}}</text>
+                <text class="c-block wx-text_rccL53" >商品规格：{{item.goods_spec}}</text>
+            </view>
+            <view class="c-minheight wx-view_vS9eoM" >
+                <text class="c-block wx-text_llIdn0" wx:if="{{item.item_is_offer == 0}}">￥{{item.goods_price}}</text>
+                <text class="c-block wx-text_llIdn0" wx:else>￥{{item.limited_money}}</text>
+                <text class="c-block wx-text_FNdtMJ" >x{{item.item_number}}</text>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_naUSRG" >
+            <text class="c-block wx-text_dVjMYf" >共{{item.item_number}}件</text>
+            <text class="c-block wx-text_KjYRMu" >小计:</text>
+            <text class="c-block wx-text_0uyFJr" >￥{{item.item_money}}</text>
+        </view>
+    </view>
+</view>
+<view class="c-minheight wx-view_iBIyWe" >
+    <view class="c-minheight wx-view_htIGru" >
+        <text class="c-block wx-text_35Q9L8" >共{{number}}件</text>
+        <text class="c-block wx-text_hApYzM" >合计:</text>
+        <text class="c-block wx-text_tpluqM" >{{info.order_money}}</text>
+        <text class="c-block wx-text_hApYzM" wx:if="{{info.order_desc == '商品购买'}}">（含运费{{freight}}元）</text>
+    </view>
+    <button class="wx-button_yHHHqQ"  hover-class="button-hover" size="default" type="default" bindtap="GoPay">支付订单</button>
+</view>

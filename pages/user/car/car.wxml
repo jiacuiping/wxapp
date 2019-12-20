@@ -1,0 +1,62 @@
+<form bindsubmit="CreateOrder">
+    <view class="c-minheight wx-view_f4CmOn" >
+        <text class="c-block wx-text_KtEu95" >购物车</text>
+    </view>
+    <checkbox-group class="goods" bindchange="checkboxChange" name="checkbox" style="margin-bottom: 52px;">
+        <view class="c-minheight wx-view_8BhOYw" wx:for="{{car}}">
+            <view style="width: 12%;height: 100%;float: left;">
+                <view style="width:25px;height: 25px;margin:auto;position: relative;top: 50%;transform: translateY(-50%);">
+                    <checkbox value="{{item.car_id}}" style="margin:auto" data-number="{{item.car_number}}" data-offer="{{item.car_is_offer}}" checked="{{is_all_checked}}"/>
+                </view>
+            </view>
+
+            <image class="wx-image_Br1Te4"  mode="scaleToFill" src="{{item.goods_image}}"/>
+            <view class="c-minheight wx-view_s5Iy7x" >
+                <view class="c-minheight wx-view_p5tSdG" >
+                    <text class="c-block wx-text_52EVMm" >{{item.goods_name}}</text>
+                    <!-- <text class="c-block wx-text_qLki9m" >颜色:白色</text> -->
+                    <view class="c-minheight wx-view_lSgVEi" style="height: 25px;">
+                        <view>
+                            <view class="changeNumber" bindtap="ChangeGoods" data-id="{{item.car_id}}" data-type="dec"> - </view>
+                            <view class="number"> {{item.car_number}} </view>
+                            <view class="changeNumber" bindtap="ChangeGoods" data-id="{{item.car_id}}" data-type="inc"> + </view>
+                        </view>
+                        <!-- <image class="wx-image_QBC7eD"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/bcdd8583a39b55abf47feaf8e619ef76_origin.png"/> -->
+                    </view>
+                    <view style="font-size: .7rem;margin-top: .3rem;">{{item.warehouse}}</view>
+                </view>
+
+                <block wx:if="{{item.car_is_offer == 0}}">
+                    <view class="c-minheight wx-view_1xicgB">
+                        <text class="c-block wx-text_Drd7Et" >¥{{item.count_price}}</text>
+                        <image class="wx-image_B5Ua7b" bindtap="ChangeGoods" data-id="{{item.car_id}}" data-type="del" mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/821ba88f5d5f6aa4e21c41fe0678ea83_origin.png"/>
+                    </view>
+                </block>
+
+                <block wx:else>
+                    <view class="c-minheight wx-view_1xicgB">
+                        <text class="c-block wx-text_Drd7Et" >￥{{item.offer_price}}</text>
+                        <text class="c-block wx-text_Uow9F5" >￥{{item.count_price}}</text>
+                        <image class="wx-image_B5Ua7b" bindtap="ChangeGoods" data-id="{{item.car_id}}" data-type="del" mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/821ba88f5d5f6aa4e21c41fe0678ea83_origin.png"/>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </checkbox-group>
+    <view class="c-minheight wx-view_hWTHVr" >
+        <view class="c-minheight wx-view_9O0ZZ9">
+            <checkbox-group class="checkbox-group" bindchange="IsAll">
+                <checkbox class="checkbox" value="{{is_all_value}}" checked="{{is_all_checked}}">
+                    <text>全选</text>
+                </checkbox>
+            </checkbox-group>
+        </view>
+        <view class="c-minheight wx-view_w1LbSx" >
+            <text class="c-block wx-text_hZhzyW" >合计: ￥</text>
+            <text class="c-block wx-text_g2CtvH" >{{countPrice}}</text>
+            <text class="c-block wx-text_qshiTx" wx:if="{{car.length != 0}}">含运费{{freight}}元</text>
+            <text class="c-block wx-text_qshiTx" wx:else>含运费0元</text>
+        </view>
+        <button class="c-minheight wx-view_i1nbqz" form-type="submit">结算（{{countNumber}}）</button>
+    </view>
+</form>

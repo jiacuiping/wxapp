@@ -3,7 +3,7 @@
   "window": {
     "navigationBarTextStyle": "black", 
     "navigationBarBackgroundColor": "#f1f1f1", 
-    "navigationBarTitleText": "\u6211\u7684", 
+    "navigationBarTitleText": "\u786e\u8ba4\u8ba2\u5355", 
     "backgroundColor": "#ffffff", 
     "enablePullDownRefresh": true, 
     "backgroundTextStyle": "dark"
@@ -25,7 +25,8 @@
     "page/page5/page5", 
     "page/page7/page7", 
     "page/page9/page9", 
-    "page/renwu/renwu"
+    "page/renwu/renwu", 
+    "page/page14/page14"
   ], 
   "networkTimeout": {
     "connectSocket": 50000, 

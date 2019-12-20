@@ -5899,7 +5899,7 @@ image {
 @import "utils/wxParse/wxParse.wxss";
 
 page {
-    background-color: #f3f3f3;
+    background-color: #fff;
     font-size: 16px;
     height: 100%;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;

@@ -1,0 +1,21 @@
+<view class="c-minheight wx-view_lNqfCH">
+    <view class="c-minheight wx-view_N7F6US" wx:for="{{message}}" bindtap="GoInfo" data-id="{{item.message_id}}">
+        <image class="wx-image_N95Hnq"  mode="scaleToFill" src="{{item.message_icon}}"/>
+        <view class="c-minheight wx-view_uHkRm9">
+            <view style="width: 75%;float: left;">
+                <view class="c-minheight wx-view_U7CowL">
+                    <text class="c-block wx-text_LccSgK" wx:if="{{item.message_show == 0}}">{{item.message_title}}</text>
+                    <text class="c-block wx-text_LccSgK" style="color:#bfbdc0;" wx:else>{{item.message_title}}</text>
+                    <!-- <text class="c-block wx-text_piCzG0">{{itme.message_time}}</text> -->
+                </view>
+                <view class="c-minheight wx-view_yS8nLv">
+                    <text class="c-block wx-text_yzhz0B" >{{item.message_text}}</text>
+                </view>
+            </view>
+            <view style="width: 25%;float: right;height: 100%;">
+                <view style="color:#bfbdc0;">{{item.message_time}}</view>
+                <view style="color:#bfbdc0;margin-top: 3px;padding-right: 3px;" catchtap="RemoveMessage" data-id="{{item.message_id}}">删除</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,40 @@
+<view class="c-minheight wx-view_sroCJe" >
+<!--     <view class="c-minheight wx-view_jJ3eba" >
+        <image class="wx-image_LIyl2R"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/9ac2cad60e4e1cc17cdda741271d0235_origin.png"/>
+    </view> -->
+    <!-- <input class="c-block c-fullwidth wx-input_9R28HP"  name="input1" type="text"/> -->
+    <input class="c-block c-fullwidth wx-input_9R28HP"  name="input1" type="text" bindinput="inputTyping" bindconfirm="search" confirm-type="search"/>
+    <icon class="wx-icon_JFILSW" color="rgba(255,255,255,1)" size="18" type="search"/>
+</view>
+
+<view class="c-minheight wx-view_GNLZty" >
+    <text class="c-block wx-text_hojvWX" bindtap='SelectSort'>全部</text>
+    <text class="c-block {{SortName == 'complex' ? 'wx-text_rATskG' : 'wx-text_hojvWX'}}" data-value="complex" data-type="{{SortType}}" bindtap="Changeorder">综合</text>
+    <text class="c-block {{SortName == 'sales' ? 'wx-text_rATskG' : 'wx-text_hojvWX'}}" data-value="sales" data-type="{{SortType}}" bindtap="Changeorder">销量</text>
+    <text class="c-block {{SortName == 'price' ? 'wx-text_rATskG' : 'wx-text_hojvWX'}}" data-value="price" data-type="{{SortType}}" bindtap="Changeorder">价格</text>
+</view>
+<view class="c-minheight wx-view_tdlUCs" >
+
+    <view wx:if="{{goods.length == 0}}" class="nodata" style="">暂无商品</view>
+
+    <navigator class="wx-navigator_n3vQYd" wx:for="{{goods}}"  hover-class="navigator-hover" url="../goodsinfo/goodsinfo?goods_id={{item.goods_id}}">
+
+        <image class="wx-image_HsAX8s"  mode="aspectFit" src="{{item.goods_image}}" style=""/>
+        <view class="c-minheight wx-view_ZhdL6d" >
+            <!-- <text class="c-block wx-text_cjhm6S" >乐视</text> -->
+            <text class="wx-text_JkhshF2" >{{item.goods_name}}</text>
+            <text class="c-block wx-text_WEMSkk" wx:if="{{item.is_offer == 0}}">￥{{item.goods_price}}</text>
+            <text class="c-block wx-text_WEMSkk" wx:else>￥{{item.offerInfo.limited_money}}</text>
+            <image class="wx-image_l9XanQ" mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/64df282bdf1a896e718653c9210e9fc2_origin.png" catchtap="AddCar" data-id="{{item.goods_id}}" data-offer="{{item.is_offer}}"/>
+        </view>
+    </navigator>
+    <view class='zhezhao' hidden="{{flag}}" bindtap="laqi">
+    <!--这是一个遮罩层，在框弹出后遮住框外区域-->
+    </view>
+    <view class="sorts {{ModalBox == 'rise' ? 'rise' : 'decline'}}" style='display:{{RiOrDe}};overflow-y:scroll'>
+        <view class="sortsbox">
+            <view class="sortsview {{sort == 0 ? 'active' : ''}}" data-sort="0" bindtap="filter">全部分类</view>
+            <view wx:for="{{sorts}}" class="sortsview {{sort == item.sort_id ? 'active' : ''}}" data-sort="{{item.sort_id}}" bindtap="filter">{{item.sort_name}}</view>
+        </view>
+    </view>
+</view>

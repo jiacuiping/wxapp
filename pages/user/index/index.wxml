@@ -1,0 +1,97 @@
+<view class="c-minheight wx-view_7B33cZ">
+    <image class="wx-image_J88FGu"  mode="scaleToFill" src="{{user.user_avatar}}"/>
+    <text class="c-block wx-text_yrCjfV">{{user.user_name}}</text>
+</view>
+<view class="c-minheight wx-view_4yMKwb">
+    <view class="c-minheight wx-view_KDRz3R">
+        <text class="c-block wx-text_jQDSGh">商品订单</text>
+        <text class="c-block wx-text_ciH3hs" bindtap="Jump" data-type="goods" data-status="-1">查看全部订单 > </text>
+    </view>
+    <view class="c-minheight wx-view_yIivC7">
+        <view class="c-minheight wx-view_anEvtD">
+            <view class="c-minheight wx-view_GPnKZq" bindtap="Jump" data-type="goods" data-status="0">
+                <image class="wx-image_ufsfEX"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/d343825fb8918b81623272667d726bb6_origin.png"/>
+                <text class="c-block wx-text_rXnTVS">待付款</text>
+            </view>
+            <view class="c-minheight wx-view_GPnKZq" bindtap="Jump" data-type="goods" data-status="20">
+                <image class="wx-image_ufsfEX"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/a124a28fc73b862855c087cd06a00917_origin.png"/>
+                <text class="c-block wx-text_rXnTVS">配送中</text>
+            </view>
+            <view class="c-minheight wx-view_GPnKZq" bindtap="Jump" data-type="goods" data-status="30">
+                <image class="wx-image_ufsfEX"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/447c8a082ab50c7498078ca50c85b706_origin.png"/>
+                <text class="c-block wx-text_rXnTVS">待评价</text>
+            </view>
+            <view class="c-minheight wx-view_GPnKZq" bindtap="Jump" data-type="goods" data-status="40">
+                <image class="wx-image_ufsfEX"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/34105dcecadf0774397b5bebb009a208_origin.png"/>
+                <text class="c-block wx-text_rXnTVS">已评价</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="c-minheight wx-view_4yMKwb">
+    <view class="c-minheight wx-view_KDRz3R">
+        <text class="c-block wx-text_jQDSGh">跑腿订单</text>
+        <text class="c-block wx-text_ciH3hs" bindtap="Jump" data-type="task" data-status="-1">查看全部订单 ></text>
+    </view>
+    <view class="c-minheight wx-view_yIivC7">
+        <view class="c-minheight wx-view_anEvtD">
+            <view class="c-minheight wx-view_GPnKZq" bindtap="Jump" data-type="task" data-status="0">
+                <image class="wx-image_ufsfEX"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/d343825fb8918b81623272667d726bb6_origin.png"/>
+                <text class="c-block wx-text_rXnTVS">待付款</text>
+            </view>
+            <view class="c-minheight wx-view_GPnKZq" bindtap="Jump" data-type="task" data-status="10">
+                <image class="wx-image_ufsfEX"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/a124a28fc73b862855c087cd06a00917_origin.png"/>
+                <text class="c-block wx-text_rXnTVS">待接单</text>
+            </view>
+            <view class="c-minheight wx-view_GPnKZq" bindtap="Jump" data-type="task" data-status="20">
+                <image class="wx-image_ufsfEX"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/447c8a082ab50c7498078ca50c85b706_origin.png"/>
+                <text class="c-block wx-text_rXnTVS">配送中</text>
+            </view>
+            <view class="c-minheight wx-view_GPnKZq" bindtap="Jump" data-type="task" data-status="30">
+                <image class="wx-image_ufsfEX"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/34105dcecadf0774397b5bebb009a208_origin.png"/>
+                <text class="c-block wx-text_rXnTVS">已完成</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="c-minheight wx-view_KhWYAJ">
+    <view class="c-minheight wx-view_MvLdN0">
+        <text class="c-block wx-text_YJMY7U">我的服务</text>
+    </view>
+    <view class="c-minheight wx-view_Bht3EF">
+        <navigator url="/pages/user/mobile/mobile" style="width:25%;float:left;">
+            <view catchtap="tap_441ea3d5" class="c-minheight wx-view_Q8HTbU" bindtap="JumpHref" data-url="mobile/mobile">
+                <image class="wx-image_Vz8XgL"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/c7da9a454cb5495d4ac5a633ce693dba_origin.png"/>
+                <text class="c-block wx-text_1BIrml">绑定手机</text>
+            </view>
+        </navigator>
+
+        <navigator url="/pages/user/evaluate/evaluate" style="width:25%;float:left;">
+            <view catchtap="tap_0eeb4e6e" class="c-minheight wx-view_Q8HTbU" bindtap="JumpHref" data-url="evaluate/evaluate">
+                <image class="wx-image_Vz8XgL"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/9e470426c6f7883805054248e23eb39e_origin.png"/>
+                <text class="c-block wx-text_1BIrml">我的评价</text>
+            </view>
+        </navigator>
+
+        <navigator url="/pages/user/address/address" style="width:25%;float:left;">
+            <view catchtap="tap_24b6a232" class="c-minheight wx-view_Q8HTbU" bindtap="JumpHref" data-url="address/address">
+                <image class="wx-image_Vz8XgL"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/50372948c84356fa297c8457a95c73fa_origin.png"/>
+                <text class="c-block wx-text_1BIrml">地址管理</text>
+            </view>
+        </navigator>
+
+        <navigator url="/pages/user/coupon/coupon" style="width:25%;float:left;">
+            <view catchtap="tap_9e09150c" class="c-minheight wx-view_Q8HTbU" bindtap="JumpHref" data-url="coupon/coupon">
+                <image class="wx-image_Vz8XgL"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/b0b19a0e60e7ff21ed9df72a84b25136_origin.png"/>
+                <text class="c-block wx-text_1BIrml">优惠券</text>
+            </view>
+        </navigator>
+
+        <navigator url="/pages/user/car/car" style="width:25%;float:left;">
+            <view catchtap="tap_56f83221" class="c-minheight wx-view_Q8HTbU" bindtap="JumpHref" data-url="car/car">
+                <image class="wx-image_Vz8XgL"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/4ab687b51557db6883c9b028c21f65ce_origin.png"/>
+                <text class="c-block wx-text_1BIrml">购物车</text>
+            </view>
+        </navigator>
+    </view>
+</view>

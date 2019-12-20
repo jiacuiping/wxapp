@@ -1,0 +1,23 @@
+<view class="c-minheight wx-view_f4CmOn" >
+    <text class="c-block wx-text_KtEu95" >地址管理</text>
+    <view class="c-block wx-text_g14KPo" bindtap="AddAddress">添加新地址</view>
+</view>
+
+<view class="c-minheight wx-view_IIF1YR" wx:for="{{address}}">
+    <view class="c-minheight wx-view_sqo9BG" >
+        <image class="wx-image_oDKGgY"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/b259eb819baa99cedf9a15787f9b36d8_origin.png"/>
+    </view>
+    <view class="c-minheight wx-view_aY7hMQ" >
+        <view class="c-minheight wx-view_XfXcgR" >
+            <text class="c-block wx-text_CmBfXu" >{{item.address_contact}}</text>
+            <text class="c-block wx-text_vH2Uk5" >{{item.address_mobile}}</text>
+        </view>
+        <view class="c-minheight wx-view_7Jd5PY" >
+            <text class="c-block wx-text_JTw7Vi" wx:if="{{item.address_default == 1}}">默认</text>
+            <text class="c-block wx-text_juSjdn" >{{item.address_info}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_Dtd3SW" >
+        <view class="c-block wx-text_d81uop" bindtap="EditAddress" data-id="{{item.address_id}}">编辑</view>
+    </view>
+</view>

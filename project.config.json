@@ -9,12 +9,21 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.4",
-	"appid": "wx59ab06c6f3cdb3ef",
-	"projectname": "wxapp",
+	"appid": "wxf24c79e7f9eb5a96",
+	"projectname": "%E4%B9%90%E8%BF%AA%E8%B4%AD",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -30,13 +39,71 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": 0,
+					"name": "结算页面",
+					"pathName": "pages/order/createorder/createorder",
+					"query": "order_sn=LDG157078562400008",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布任务",
+					"pathName": "pages/task/task",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品列表",
+					"pathName": "pages/goods/goodslist/goodslist",
+					"query": "keyword=&sort=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/goods/goodsinfo/goodsinfo",
+					"query": "goods_id=36",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价页面",
+					"pathName": "pages/order/evaluate/evaluate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "消息详情",
+					"pathName": "pages/message/info/info",
+					"query": "message_id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单列表",
+					"pathName": "pages/order/order/order",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }

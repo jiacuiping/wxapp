@@ -1,0 +1,18 @@
+<view class="c-minheight wx-view_f4CmOn" >
+    <text class="c-block wx-text_KtEu95" >优惠券</text>
+</view>
+
+<view class="c-minheight wx-view_BjXOcC" wx:for="{{coupon}}">
+    <image class="wx-image_qacq06"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/161431/origin/b5d9c28d41f7c9a26de742bc89a5454e_origin.png"/>
+    <image class="wx-image_e1eDHf"  mode="scaleToFill" bindtap="GoGoods" src="http://qty83k.creatby.com/materials/161431/origin/e613bbd183daa7e4700ac67bc82c8434_origin.png"/>
+    <view class="c-minheight wx-view_7Fahrb" >
+        <text class="c-block wx-text_ugO3an" >￥</text>
+        <text class="c-block wx-text_99MtEy" >{{item.coupon_price}}</text>
+    </view>
+    <view class="c-minheight wx-view_SQfOWd" >
+        <text class="c-block wx-text_RcbDv0" wx:if="{{item.coupon_type == 1}}">满减优惠券</text>
+        <text class="c-block wx-text_RcbDv0" wx:elif="{{item.coupon_type == 2}}">折扣优惠券</text>
+        <text class="c-block wx-text_RcbDv0" wx:else>配送费优惠券</text>
+        <text class="c-block wx-text_VwIxaP" >满{{item.coupon_condition}}元使用</text>
+    </view>
+</view>
